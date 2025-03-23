@@ -5,22 +5,20 @@ import java.util.Scanner;
 public class AreaOfTriangle {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
-
+        System.out.println("This program will calculate the area of a triangle.");
         System.out.println("Enter length of side A: ");
-        int a = Integer.parseInt(console.next());
+        double aSide = console.nextDouble();
+
         System.out.println("Enter length of side B: ");
-        int b = Integer.parseInt(console.next());
+        double bSide = console.nextDouble();
+
         System.out.println("Enter length of side C: ");
-        int c = Integer.parseInt(console.next());
+        double cSide = console.nextDouble();
 
-        int p = (a + b + c) / 2;
-        double area = Math.sqrt((p-a) * (p-b) * (p-c));
+        double p = (aSide + bSide + cSide) / 2;
+        double triangleArea = Math.sqrt(p * (p-aSide) * (p-bSide) * (p-cSide));
 
-        if (area <= 0){
-            System.out.println("NaN");
-            return;
-        }
-        System.out.println(String.format("%.2f", area));
+        System.out.printf("%.2f", triangleArea);
 
     }
 }
