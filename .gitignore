@@ -1,0 +1,19 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Gradle
+/.gradle
+/build/
+
+# Java
+*.class
+*.jar
+*.war
+
+# OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Logs
+*.log
