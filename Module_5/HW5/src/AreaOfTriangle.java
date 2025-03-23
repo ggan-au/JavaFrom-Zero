@@ -14,6 +14,10 @@ public class AreaOfTriangle {
         int p = (a + b + c) / 2;
         double area = Math.sqrt((p-a) * (p-b) * (p-c));
 
+        if (area <= 0){
+            System.out.println("NaN");
+            return;
+        }
         System.out.println(String.format("%.2f", area));
 
     }
