@@ -1,3 +1,5 @@
+package com.itbulls.learnit.operations;
+
 import java.util.Scanner;
 
 public class AreaOfTriangle {
